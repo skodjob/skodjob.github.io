@@ -3,6 +3,7 @@ layout: post
 title: Make your testing easier with Test-Frame
 date: 2024-03-23 16:00:00
 categories: tools
+image: /assets/test-frame-introduction/test-frame-introduction.jpg
 ---
 
 ## Testing of applications running on Kubernetes

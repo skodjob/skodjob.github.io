@@ -3,6 +3,7 @@ layout: post
 title: What does automation-hub mean?
 date: 2024-01-15 16:00:00 +0100
 categories: automation
+image: /assets/automation.jpg
 ---
 
 ## What is the automation-hub

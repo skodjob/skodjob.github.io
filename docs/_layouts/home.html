@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="blog-posts-section">
+      <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in site.posts limit:6 -%}
+        <li class="post-card">
+          {%- if post.image -%}
+          <div class="post-image">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+            </a>
+          </div>
+          {%- endif -%}
+          <div class="post-card-content">
+            <div class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+              {%- if post.categories.size > 0 -%}
+                <span class="post-category">{{ post.categories[0] | capitalize }}</span>
+              {%- endif -%}
+            </div>
+            <h3 class="post-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            {%- if post.excerpt -%}
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            {%- endif -%}
+            <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      {%- if site.posts.size > 6 -%}
+        <div class="view-all-posts">
+          <a href="/blog/" class="btn">View All Posts</a>
+        </div>
+      {%- endif -%}
+
+      <p class="rss-subscribe">
+        <a href="{{ "/feed.xml" | relative_url }}">
+          Subscribe via RSS
+        </a>
+      </p>
+    </div>
+  {%- endif -%}
+</div>

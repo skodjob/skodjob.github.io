@@ -3,6 +3,7 @@ layout: post
 title: What is Skodjob performance hub?
 date: 2024-01-15 16:00:00
 categories: performance
+image: /assets/perf-intro.jpg
 ---
 
 ## What is our goal?

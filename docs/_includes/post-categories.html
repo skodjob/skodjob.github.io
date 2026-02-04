@@ -1,0 +1,8 @@
+{% if post.categories.size > 0 or page.categories.size > 0 %}
+<div class="post-categories">
+  {% assign categories = post.categories | default: page.categories %}
+  {% for category in categories %}
+    <a href="/{{ category | slugify }}/" class="category-tag">{{ category | capitalize }}</a>
+  {% endfor %}
+</div>
+{% endif %}
