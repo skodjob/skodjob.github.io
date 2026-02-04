@@ -1,10 +1,13 @@
 ---
 layout: page
-title: About
+title: About SKODJOB
 permalink: /about/
 ---
 
-# Welcome this little boy to the town
+<div class="about-hero">
+  <h1>Welcome this little boy to the town</h1>
+  <p class="about-subtitle">The Story Behind SKODJOB</p>
+</div>
 The whole idea started a few years back. Our main work consists of finding all sorts of defaults in applications running on top of Kubernetes. 
 That itself is quite a challenge if we consider that systems like that could be distributed systems, integration of several different components, or even integration of several systems together.
 Our experience was mostly about spinning up Kubernetes cluster, deploying our project, in our case [Strimzi](https://strimzi.io/), playing with it a little bit on the test level, and then evaluating the state with some results.

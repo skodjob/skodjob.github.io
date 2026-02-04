@@ -1,25 +1,142 @@
 ---
 permalink: /404.html
-layout: page
+layout: default
+title: Page Not Found
+sitemap: false
+exclude_from_nav: true
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="error-page">
+  <div class="error-content">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Oops! Page Not Found</h2>
+    <p class="error-description">
+      The page you're looking for seems to have wandered off into the Kubernetes void.
+      Don't worry, even the best automation sometimes needs a little debugging!
+    </p>
 
-<div class="container">
-  <h1>404</h1>
+    <div class="error-actions">
+      <a href="/" class="btn">Go Home</a>
+      <a href="/about/" class="btn btn-secondary">Learn About Us</a>
+    </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+    <div class="error-links">
+      <h3>Popular Pages</h3>
+      <ul>
+        <li><a href="/">Latest Blog Posts</a></li>
+        <li><a href="/about/">About SKODJOB</a></li>
+        <li><a href="https://github.com/skodjob" target="_blank">GitHub Projects</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
+
+<style>
+.error-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 4rem 3rem;
+  border-top: 6px solid #2962ff;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2962ff, #0d47a1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  color: #212121;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.error-description {
+  font-size: 1.2rem;
+  color: #757575;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.error-links {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 2rem;
+}
+
+.error-links h3 {
+  color: #212121;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.error-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.error-links li {
+  margin-bottom: 0.5rem;
+}
+
+.error-links a {
+  color: #2962ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-links a:hover {
+  color: #0d47a1;
+}
+
+@media (max-width: 768px) {
+  .error-page {
+    padding: 2rem 1rem;
+  }
+
+  .error-content {
+    padding: 3rem 2rem;
+  }
+
+  .error-code {
+    font-size: 6rem;
+  }
+
+  .error-title {
+    font-size: 2rem;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+</style>

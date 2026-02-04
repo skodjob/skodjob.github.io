@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Let’s improve Testing Farm experience for Debezium project! 
+title: Let's improve Testing Farm experience for Debezium project!
 date: 2024-03-10 16:00:00
 categories: automation
+image: /assets/packer.jpg
 ---
 
 You may know the **[Testing Farm](https://docs.testing-farm.io)** from the [blog post](https://fedoramagazine.org/how-to-use-testing-farm-outside-of-rhel/) written by **[David Kornel](https://github.com/kornys)** and **[Jakub Stejskal](https://github.com/Frawless)**.

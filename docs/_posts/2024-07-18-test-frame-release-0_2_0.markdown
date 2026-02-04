@@ -3,6 +3,7 @@ layout: post
 title: Updates and Enhancements in Test-Frame 0.2.0 Since Alpha Release
 date: 2024-07-18 09:00:00
 categories: release
+image: /assets/test-frame-0_2_0-release.jpg
 ---
 
 ## Updates and Enhancements in Test-Frame 0.2.0 Since Alpha Release
