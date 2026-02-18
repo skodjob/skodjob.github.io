@@ -9,13 +9,17 @@ image: /assets/kubetest4j.jpg
 ## Why we renamed Test-frame to kubetest4j
 
 When we started the Test-frame project, we wanted to create a library for easier testing of Kubernetes applications and operators.
-However, after using it in multiple projects and getting feedback from the community, we realized that our naming was not following Java ecosystem standards.
+However, after using it in multiple projects and getting feedback from the community, we realized that our naming had two main issues.
 
+First, our naming was not following Java ecosystem standards.
 Most Java libraries use lowercase names with hyphens or follow the standard Maven naming conventions.
 Names like `junit`, `mockito`, `testcontainers`, and `kubebuilder` are common in the Java world.
 Our original name `Test-frame` with capital letters and a hyphen was not following these patterns.
 
-So we decided to rename the project to `kubetest4j`. The name follows Java naming trends where:
+Second, the name `Test-frame` was not descriptive enough. It does not clearly indicate that this is tooling specifically for testing on Kubernetes.
+When someone sees "Test-frame", it could be a testing framework for anything - web applications, databases, or any other software.
+
+So we decided to rename the project to `kubetest4j`. The name follows Java naming trends and is more descriptive:
 - `kube` refers to Kubernetes
 - `test` shows it is for testing purposes
 - `4j` is a common suffix meaning "for Java" (like log4j, neo4j)
